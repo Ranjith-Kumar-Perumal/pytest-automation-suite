@@ -53,7 +53,7 @@ class BasePage:
         Returns:
             WebElement
         """
-        return self.driver.find_element(*locator)
+        return self.wait.until(EC.presence_of_element_located(locator))
     
     def find_elements(self, locator):
         """Find multiple elements matching the locator"""

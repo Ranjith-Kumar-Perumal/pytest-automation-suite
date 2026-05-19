@@ -58,3 +58,10 @@ def chrome_options():
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     return options
+
+
+@pytest.fixture(scope="session")
+def login_url():
+    """Provide the login page URL for tests."""
+    # Update this value to match your application login page.
+    return os.getenv("LOGIN_URL", "https://practicetestautomation.com/practice-test-login/")

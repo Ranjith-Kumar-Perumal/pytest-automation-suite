@@ -1,0 +1,201 @@
+2026-05-19 16:37:17,469 - INFO - Starting login test
+2026-05-19 16:37:27,498 - ERROR - Test failed
+Traceback (most recent call last):
+  File "C:\Work\Projects\Train\python_files\tests\test_login.py", line 16, in test_login
+    login_page.login("admin", "1234")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Work\Projects\Train\python_files\pages\login_page.py", line 15, in login
+    self.find_element(self.USERNAME_INPUT).send_keys(username)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Projects\Train\python_files\pages\base_page.py", line 56, in find_element
+    return self.driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Work\Projects\Train\python_files\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 868, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Work\Projects\Train\python_files\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 468, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Work\Projects\Train\python_files\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="username"]"}
+  (Session info: chrome=146.0.7680.178); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff7108929c5+2ed785]
+	chromedriver!GetHandleVerifier [0x7ff7105ba0d0+14e90]
+	chromedriver!(No symbol) [0x7ff71031db2d]
+	chromedriver!(No symbol) [0x7ff710376b9e]
+	chromedriver!(No symbol) [0x7ff710376eac]
+	chromedriver!(No symbol) [0x7ff7103c6fe7]
+	chromedriver!(No symbol) [0x7ff7103c3b9b]
+	chromedriver!(No symbol) [0x7ff710369298]
+	chromedriver!(No symbol) [0x7ff71036a183]
+	chromedriver!GetHandleVerifier [0x7ff7108bde0d+318bcd]
+	chromedriver!GetHandleVerifier [0x7ff7108b8588+313348]
+	chromedriver!GetHandleVerifier [0x7ff7108d9d7a+334b3a]
+	chromedriver!GetHandleVerifier [0x7ff7105d6785+31545]
+	chromedriver!GetHandleVerifier [0x7ff7105dfacc+3a88c]
+	chromedriver!GetHandleVerifier [0x7ff7105c3634+1e3f4]
+	chromedriver!GetHandleVerifier [0x7ff7105c37e6+1e5a6]
+	chromedriver!GetHandleVerifier [0x7ff7105a7e37+2bf7]
+	KERNEL32!BaseThreadInitThunk [0x7ffdfb9be8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffdfd7ac3fc+2c]
+
+2026-05-19 16:37:27,858 - ERROR - Screenshot saved at screenshots/login_failure_20260519_163727.png
+2026-05-19 16:40:07,667 - INFO - Starting login test
+2026-05-19 16:40:17,715 - ERROR - Test failed
+Traceback (most recent call last):
+  File "C:\Work\Projects\Train\python_files\tests\test_login.py", line 16, in test_login
+    login_page.login("admin", "1234")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Work\Projects\Train\python_files\pages\login_page.py", line 15, in login
+    self.find_element(self.USERNAME_INPUT).send_keys(username)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Projects\Train\python_files\pages\base_page.py", line 56, in find_element
+    return self.driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\2509341\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\webdriver.py", line 868, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\2509341\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\webdriver.py", line 468, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\2509341\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="username"]"}
+  (Session info: chrome=146.0.7680.178); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff7108929c5+2ed785]
+	chromedriver!GetHandleVerifier [0x7ff7105ba0d0+14e90]
+	chromedriver!(No symbol) [0x7ff71031db2d]
+	chromedriver!(No symbol) [0x7ff710376b9e]
+	chromedriver!(No symbol) [0x7ff710376eac]
+	chromedriver!(No symbol) [0x7ff7103c6fe7]
+	chromedriver!(No symbol) [0x7ff7103c3b9b]
+	chromedriver!(No symbol) [0x7ff710369298]
+	chromedriver!(No symbol) [0x7ff71036a183]
+	chromedriver!GetHandleVerifier [0x7ff7108bde0d+318bcd]
+	chromedriver!GetHandleVerifier [0x7ff7108b8588+313348]
+	chromedriver!GetHandleVerifier [0x7ff7108d9d7a+334b3a]
+	chromedriver!GetHandleVerifier [0x7ff7105d6785+31545]
+	chromedriver!GetHandleVerifier [0x7ff7105dfacc+3a88c]
+	chromedriver!GetHandleVerifier [0x7ff7105c3634+1e3f4]
+	chromedriver!GetHandleVerifier [0x7ff7105c37e6+1e5a6]
+	chromedriver!GetHandleVerifier [0x7ff7105a7e37+2bf7]
+	KERNEL32!BaseThreadInitThunk [0x7ffdfb9be8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffdfd7ac3fc+2c]
+
+2026-05-19 16:40:17,876 - ERROR - Screenshot saved at screenshots/login_failure_20260519_164017.png
+2026-05-19 16:50:32,341 - INFO - Starting login test
+2026-05-19 16:50:42,364 - ERROR - Test failed
+Traceback (most recent call last):
+  File "C:\Work\Projects\Train\python_files\tests\test_login.py", line 16, in test_login
+    login_page.login("admin", "1234")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Work\Projects\Train\python_files\pages\login_page.py", line 16, in login
+    self.send_keys(self.USERNAME_INPUT, username)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Projects\Train\python_files\pages\base_page.py", line 102, in send_keys
+    element = self.wait_for_element_visibility(locator)
+  File "C:\Work\Projects\Train\python_files\pages\base_page.py", line 69, in wait_for_element_visibility
+    return self.wait.until(EC.visibility_of_element_located(locator))
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\2509341\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\support\wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff7108929c5+2ed785]
+	chromedriver!GetHandleVerifier [0x7ff7105ba0d0+14e90]
+	chromedriver!(No symbol) [0x7ff71031db2d]
+	chromedriver!(No symbol) [0x7ff710376b9e]
+	chromedriver!(No symbol) [0x7ff710376eac]
+	chromedriver!(No symbol) [0x7ff7103c6fe7]
+	chromedriver!(No symbol) [0x7ff7103c3b9b]
+	chromedriver!(No symbol) [0x7ff710369298]
+	chromedriver!(No symbol) [0x7ff71036a183]
+	chromedriver!GetHandleVerifier [0x7ff7108bde0d+318bcd]
+	chromedriver!GetHandleVerifier [0x7ff7108b8588+313348]
+	chromedriver!GetHandleVerifier [0x7ff7108d9d7a+334b3a]
+	chromedriver!GetHandleVerifier [0x7ff7105d6785+31545]
+	chromedriver!GetHandleVerifier [0x7ff7105dfacc+3a88c]
+	chromedriver!GetHandleVerifier [0x7ff7105c3634+1e3f4]
+	chromedriver!GetHandleVerifier [0x7ff7105c37e6+1e5a6]
+	chromedriver!GetHandleVerifier [0x7ff7105a7e37+2bf7]
+	KERNEL32!BaseThreadInitThunk [0x7ffdfb9be8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffdfd7ac3fc+2c]
+
+2026-05-19 16:50:42,511 - ERROR - Screenshot saved at screenshots/login_failure_20260519_165042.png
+2026-05-19 16:53:23,012 - INFO - Starting login test
+2026-05-19 16:53:33,071 - ERROR - Test failed
+Traceback (most recent call last):
+  File "C:\Work\Projects\Train\python_files\tests\test_login.py", line 16, in test_login
+    login_page.login("admin", "1234")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Work\Projects\Train\python_files\pages\login_page.py", line 16, in login
+    self.find_element(self.USERNAME_INPUT).send_keys(username)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Projects\Train\python_files\pages\base_page.py", line 56, in find_element
+    return self.wait.until(EC.presence_of_element_located(locator))
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\2509341\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\support\wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff7108929c5+2ed785]
+	chromedriver!GetHandleVerifier [0x7ff7105ba0d0+14e90]
+	chromedriver!(No symbol) [0x7ff71031db2d]
+	chromedriver!(No symbol) [0x7ff710376b9e]
+	chromedriver!(No symbol) [0x7ff710376eac]
+	chromedriver!(No symbol) [0x7ff7103c6fe7]
+	chromedriver!(No symbol) [0x7ff7103c3b9b]
+	chromedriver!(No symbol) [0x7ff710369298]
+	chromedriver!(No symbol) [0x7ff71036a183]
+	chromedriver!GetHandleVerifier [0x7ff7108bde0d+318bcd]
+	chromedriver!GetHandleVerifier [0x7ff7108b8588+313348]
+	chromedriver!GetHandleVerifier [0x7ff7108d9d7a+334b3a]
+	chromedriver!GetHandleVerifier [0x7ff7105d6785+31545]
+	chromedriver!GetHandleVerifier [0x7ff7105dfacc+3a88c]
+	chromedriver!GetHandleVerifier [0x7ff7105c3634+1e3f4]
+	chromedriver!GetHandleVerifier [0x7ff7105c37e6+1e5a6]
+	chromedriver!GetHandleVerifier [0x7ff7105a7e37+2bf7]
+	KERNEL32!BaseThreadInitThunk [0x7ffdfb9be8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffdfd7ac3fc+2c]
+
+2026-05-19 16:53:33,214 - ERROR - Screenshot saved at screenshots/login_failure_20260519_165333.png
+2026-05-19 16:54:43,574 - INFO - Starting login test
+2026-05-19 16:54:53,637 - ERROR - Test failed
+Traceback (most recent call last):
+  File "C:\Work\Projects\Train\python_files\tests\test_login.py", line 16, in test_login
+    login_page.login("admin", "1234")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Work\Projects\Train\python_files\pages\login_page.py", line 16, in login
+    self.find_element(self.USERNAME_INPUT).send_keys(username)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\Projects\Train\python_files\pages\base_page.py", line 56, in find_element
+    return self.wait.until(EC.presence_of_element_located(locator))
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Work\Projects\Train\python_files\.venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff7108929c5+2ed785]
+	chromedriver!GetHandleVerifier [0x7ff7105ba0d0+14e90]
+	chromedriver!(No symbol) [0x7ff71031db2d]
+	chromedriver!(No symbol) [0x7ff710376b9e]
+	chromedriver!(No symbol) [0x7ff710376eac]
+	chromedriver!(No symbol) [0x7ff7103c6fe7]
+	chromedriver!(No symbol) [0x7ff7103c3b9b]
+	chromedriver!(No symbol) [0x7ff710369298]
+	chromedriver!(No symbol) [0x7ff71036a183]
+	chromedriver!GetHandleVerifier [0x7ff7108bde0d+318bcd]
+	chromedriver!GetHandleVerifier [0x7ff7108b8588+313348]
+	chromedriver!GetHandleVerifier [0x7ff7108d9d7a+334b3a]
+	chromedriver!GetHandleVerifier [0x7ff7105d6785+31545]
+	chromedriver!GetHandleVerifier [0x7ff7105dfacc+3a88c]
+	chromedriver!GetHandleVerifier [0x7ff7105c3634+1e3f4]
+	chromedriver!GetHandleVerifier [0x7ff7105c37e6+1e5a6]
+	chromedriver!GetHandleVerifier [0x7ff7105a7e37+2bf7]
+	KERNEL32!BaseThreadInitThunk [0x7ffdfb9be8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffdfd7ac3fc+2c]
+
+2026-05-19 16:54:53,781 - ERROR - Screenshot saved at screenshots/login_failure_20260519_165453.png
